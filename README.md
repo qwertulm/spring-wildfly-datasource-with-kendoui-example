@@ -4,6 +4,7 @@ Run steps:
 1. Run frontend
 ```bash
 cd frontend
+npm install
 npm start
 ```
 
@@ -18,6 +19,7 @@ Build steps:
 1. Build frontend
 ```bash
 cd frontend
+npm install
 npm run build
 ```
 copy files from frontend/build to backend/src/main/resources/static
