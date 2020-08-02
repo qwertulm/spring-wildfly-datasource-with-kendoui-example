@@ -1,14 +1,27 @@
-## Apache Olingo
+To use it with wildfly datasource change:
+backend/src/main/resources/application.properties,
+frontend/src/consts.js.
 
-This module contains articles about Apache Olingo
+Run steps:
+1. Run frontend
+cd frontend
+npm start
 
-### Relevant articles:
+2. Run backend
+cd ../backend
+mvn spring-boot:run
 
-- [OData Protocol Guide](https://www.baeldung.com/odata)
-- [Intro to OData with Olingo](https://www.baeldung.com/olingo)
+
+Build steps:
+1. Build frontend
+cd frontend
+npm run build
+copy files from frontend/build to backend/src/main/resources/static
+
+2. Build backend
+cd ../backend
+mvn clean package
 
 
-Scrins:
-https://yadi.sk/i/QPC1S3A-CbJOIw
-https://yadi.sk/i/r7EAJM74D14-Ig
 
+ 
